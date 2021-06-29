@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <base href="/appname/"> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <style type="text/css">
+    body {
+      background-color: #333333;
+      color: #0A66FF;
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      body {
+        background-color: white;
+        color: #0A66FF;
+      }
+    }
+
+    .tada {
+      -webkit-animation-name: tada;
+      animation-name: tada;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes tada {
+      0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+
+      10%,
+      20% {
+        -webkit-transform: scale3d(.8, .8, .8) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.8, .8, .8) rotate3d(0, 0, 1, -3deg);
+      }
+
+      30%,
+      50%,
+      70%,
+      90% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 3deg);
+      }
+
+      40%,
+      60%,
+      80% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -3deg);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    @keyframes tada {
+      0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+
+      10%,
+      20% {
+        -webkit-transform: scale3d(.8, .8, .8) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.8, .8, .8) rotate3d(0, 0, 1, -3deg);
+      }
+
+      30%,
+      50%,
+      70%,
+      90% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, 3deg);
+      }
+
+      40%,
+      60%,
+      80% {
+        -webkit-transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.4, 1.4, 1.4) rotate3d(0, 0, 1, -3deg);
+      }
+
+      100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but Speckle doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+    <div style='
+      width: 100%;
+      height: 300px;
+      font-family: sans-serif !important;
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      font-weight: 400;
+      font-size: 10px;
+      '>
+      <img src="<%= BASE_URL %>logo.svg" style="max-width: 50px" class="tada">
+    </div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

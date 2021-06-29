@@ -6,6 +6,12 @@ module.exports = {
       title: 'Speckle',
       template: 'public/app.html',
       filename: 'app.html'
+    },
+    embedApp: {
+      entry: 'src/embedApp.js',
+      title: 'Speckle Embed Viewer',
+      template: 'public/embedApp.html',
+      filename: 'embedApp.html'
     }
   },
   devServer: {
